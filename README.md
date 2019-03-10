@@ -13,8 +13,7 @@ Online music store concept &amp; a virtual piano - JavaScript, HTML5, CSS3, Web 
 
 <b>Navigation</b>:
 
-<img src="https://raw.githubusercontent.com/clementlarisa/MusicStore/master/ss/ss_nav_responsive.PNG" alt="nav-responsive" width="220" height="410">
-<img src="https://raw.githubusercontent.com/clementlarisa/MusicStore/master/ss/ss_nav.PNG" alt="nav" width="600" height="310">
+<img src="https://raw.githubusercontent.com/clementlarisa/MusicStore/master/ss/ss_nav_responsive.PNG" alt="nav-responsive" width="220" height="410"><img src="https://raw.githubusercontent.com/clementlarisa/MusicStore/master/ss/ss_nav.PNG" alt="nav" width="600" height="310">
 
 ## Built With
 
