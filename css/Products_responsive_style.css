@@ -1,0 +1,26 @@
+@media screen and (max-width: 400px) {
+    div #products_gallery div.img_wrap {
+        margin: 0;
+    }
+
+    div #products_gallery {
+        padding: 0;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    ul#suppliers_list {
+        /*position: center;*/
+        padding-top: 2rem;
+        margin-bottom: 2rem;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    ul#suppliers_list li + li:before {
+        content: '';
+    }
+}

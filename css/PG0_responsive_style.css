@@ -1,0 +1,110 @@
+@media screen and (max-width: 700px) {
+
+    nav {
+        height: auto;
+        color: blue;
+        justify-content: center;
+        position: relative;
+    }
+
+    nav.responsive {
+        position: relative;
+    }
+
+    nav a {
+        color: inherit;
+    }
+
+    ul.topnav {
+        display: none;
+    }
+
+    ul.topnav.responsive {
+        order: 4;
+        align-self: flex-end;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-content: space-between;
+        height: auto;
+        background-color: #f4f4f4 !important;
+    }
+
+    ul.topnav > li > a:hover, ul.dropdown_content > li > a:hover {
+        background-color: #c3c3c3;
+    }
+
+    ul.dropdown_content {
+        background-color: #fcfcfc;
+        position: relative !important;
+        z-index: 100;
+    }
+
+    ul.topnav > li, ul.topnav > li > ul.dropdown_content > li {
+        height: 3em;
+        font-size: 1rem;
+        z-index: 100;
+    }
+
+    #products_li:hover {
+        height: 100% !important;
+        overflow: visible;
+    }
+
+    #products_li:hover > a {
+        height: initial !important;
+    }
+
+    ul.topnav > li > a, ul.dropdown_content > li > a {
+        align-items: flex-start;
+    }
+
+    #logo {
+        height: 90%;
+        text-align: center;
+    }
+
+    #logo_div {
+        flex-basis: 33%;
+        height: 3em;
+    }
+
+    #search_bar_div {
+        flex-basis: 33%;
+        width: 5vw;
+        position: relative;
+        left: 0;
+        top: 0;
+        height: inherit;
+    }
+
+    #search_bar {
+        font-size: 1rem;
+        text-align: center;
+        color: inherit;
+    }
+
+    ul.topnav li:not(:first-child) {
+        display: none;
+    }
+
+    #menu_bttn_div {
+        flex-basis: 33%;
+        display: block;
+        position: relative;
+        left: 0;
+        top: 0;
+        height: inherit;
+    }
+
+    #menu_bttn {
+        width: 2em;
+        height: 2em;
+    }
+
+    ul.topnav.responsive > li.responsive, ul.topnav.responsive > #products_li > ul.dropdown_content > li {
+        display: block;
+        width: 100%;
+        height: 3em !important;
+    }
+}

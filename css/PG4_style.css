@@ -1,0 +1,171 @@
+/*div .clape_albe {*/
+    /*height: 30px;*/
+    /*width: 15px;*/
+    /*background-color: white;*/
+    /*border: 2px solid black;*/
+    /*position: center;*/
+/*}*/
+
+/*div .clape_albe:hover {*/
+    /*background-color: lightgray;*/
+/*}*/
+
+.white {
+    fill:white;
+    stroke:black;
+    stroke-width: 1px;
+    cursor:pointer;
+    margin:2px;
+}
+.white:hover {
+    fill:#9e9e9e;
+    stroke:lightblue;
+    cursor:pointer;
+    stroke-width: 1px;
+    outline: black solid 1px;
+}
+.black {
+    fill:black;
+    stroke-width:1px;
+    cursor:pointer;
+    margin:2px;
+}
+.black:hover {
+    fill:#515151;
+    stroke:lightblue;
+    stroke-width:1px;
+    outline: black solid 1px;
+}
+
+.sheet-wrapper {
+    width: 99%;
+    height: 100vh;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.sheet-music {
+    width: 100%;
+    display: block;
+}
+
+.sheet-music__staff {
+    list-style: none;
+    padding: 0;
+    width: 100%;
+    display: block;
+    position: relative;
+}
+
+.sheet-music__staff li {
+    display: block;
+    border-bottom: 2px solid #c8c8c8;
+    padding-top: 23px;
+}
+
+.sheet-music__items {
+    position: relative;
+    top: -103px;
+
+    display: flex;
+    flex-flow: row nowrap;
+}
+
+.treble {
+    width: 5%;
+}
+
+.treble img {
+    max-height: 100px;
+}
+
+.notes {
+    width: 95%;
+    /*animation: moveLeft 20s linear 5s alternate;*/
+    /*transition: all 2s ease-in-out;*/
+    display: flex;
+    flex-flow: row nowrap;
+}
+
+.notes__measure {
+    border-left: 2px solid #c8c8c8;
+    padding: 0 0px;
+    opacity: 0;
+    margin-left: 20px;
+    display: flex;
+    flex-flow: row nowrap;
+
+    animation: display 1s linear 1s alternate;
+    transition: 2s ease-in-out;
+    -webkit-animation-fill-mode: forwards;
+}
+
+.notes__measure:nth-child(1) {
+    animation: display 1s linear 1s alternate;
+    transition: 2s ease-in-out;
+    -webkit-animation-fill-mode: forwards;
+}
+
+.notes__measure:nth-child(1) img {
+    animation: display 1s linear 2s alternate;
+    transition: 2s ease-in-out;
+    -webkit-animation-fill-mode: forwards;
+}
+
+img.note {
+    margin-right: 2px;
+    font-size: 56px;
+    position: relative;
+    max-height: 80px;
+    opacity: 0;
+}
+
+.note--e {
+    top: 27px;
+}
+
+.note--g {
+    top: 7px;
+}
+
+.note--a {
+    top: -1px;
+}
+
+.note--b {
+    top: -13px;
+}
+
+.note--d {
+    top: -33px;
+}
+
+
+@keyframes display {
+
+    /*transition: all 2s ease-in-out;*/
+/*-webkit-transition: all 2s ease-in-out; !** Chrome & Safari **!*/
+/*-moz-transition: all 2s ease-in-out; !** Firefox **!*/
+/*-o-transition: all 2s ease-in-out; !** Opera **!*/
+
+from {
+    opacity: 0;
+}
+to {
+    opacity: 1;
+}
+
+}
+
+/*@keyframes moveLeft {*/
+
+/*from {*/
+    /*transform: translate(-3350px, 0);*/
+/*}*/
+/*to {*/
+    /*transform: translate(-3350px, 0);*/
+/*}*/
+/*}*/
+

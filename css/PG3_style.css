@@ -1,0 +1,99 @@
+html {
+    font-size: 15px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    text-indent: 0;
+}
+
+body {
+    margin: 0;
+    height: 100%;
+    min-height: 100%;
+}
+
+h1 {
+    text-align: left;
+    text-transform: uppercase;
+    padding-bottom: 2rem;
+}
+
+h1:first-letter {
+    font-size: 200%;
+}
+
+
+#hip_hop_news h1 {
+    color: #160E25;
+}
+
+#pop_news h1 {
+    color: #B28780;
+}
+
+#rock_news h1 {
+    color: #652C33;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-areas:
+            'gallery gallery gallery'
+            'left middle right';
+    grid-column-gap: 10px;
+}
+
+.left, .middle, .right {
+    padding: 5px;
+    text-align: justify;
+    text-justify: inter-word;
+}
+
+.left {
+    grid-area: left;
+    background: #f4f4f4;
+    border: 0.3em solid #160E25;
+}
+
+.middle {
+    grid-area: middle;
+    background: #f4f4f4;
+    border: 0.3em solid #B28780;
+}
+
+.right {
+    grid-area: right;
+    background: #f4f4f4;
+    border: 0.3em solid #652C33;
+}
+
+img.news_gallery {
+    width: 100%;
+    opacity: 1;
+    transition: opacity .25s ease-in-out;
+}
+
+img.news_gallery:hover {
+    opacity: 0.5;
+    cursor: pointer;
+}
+
+.gallery {
+    grid-area: gallery;
+    padding: 10px;
+}
+
+.gallery_row {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0;
+}
+
+.gallery_column {
+    flex: 33.33%;
+    max-width: 33.33%;
+    padding: 0;
+}

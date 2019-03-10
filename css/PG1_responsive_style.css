@@ -1,0 +1,114 @@
+@media screen and (max-width: 740px) {
+
+    table#stores, table#stores tr {
+        border: none;
+        padding: 0;
+        display: block;
+    }
+
+    table#stores.center {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    table#stores thead {
+        display: none;
+    }
+
+    table#stores td {
+        display: block;
+        padding: 0.2em;
+        box-sizing: border-box; /*ca sa imi includa si paddingul in width;*/
+    }
+
+    address {
+        color: #373737;
+        text-decoration: none;
+    }
+
+    table#stores tbody td:nth-child(1):not(address) {
+        color: #901010;
+        font-weight: bold;
+    }
+
+    table#stores tbody tr:nth-child(n)::before {
+        content: "Shop:";
+    }
+
+    table#stores tbody td:nth-child(1) address::before {
+        content: "Address: ";
+    }
+
+    table#stores tbody td:nth-child(2)::before {
+        content: "Monday ";
+    }
+
+    table#stores tbody td:nth-child(3)::before {
+        content: "Tuesday ";
+    }
+
+    table#stores tbody td:nth-child(4)::before {
+        content: "Wednesday ";
+    }
+
+    table#stores tbody td:nth-child(5)::before {
+        content: "Thursday ";
+    }
+
+    table#stores tbody td:nth-child(6)::before {
+        content: "Friday ";
+
+    }
+
+    table#stores td {
+        border-bottom: none;
+        border-top: none;
+        float: left;
+        width: 80%;
+        padding-left: 2%;
+        padding-right: 2%;
+        color: #373737;
+    }
+
+    table#stores td::before {
+        text-align: center;
+        text-transform: uppercase;
+        width: 100%;
+        font-weight: bold;
+        margin-right: 0.1rem;
+        padding: 0.1em;
+        line-height: 100%;
+    }
+
+    table#stores tr::before {
+        float: left;
+        text-align: left;
+        text-transform: uppercase;
+        width: 100%;
+        font-weight: bold;
+        margin-right: 0.7em;
+        background-color: #901010;
+        color: #f4f4f4;
+        line-height: 100%;
+    }
+
+    aside {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 610px) {
+    div#column_container {
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+    div.column{
+        width:100%;
+    }
+    div#slideshow_container {
+        max-width: 380px;
+        height: 200px;
+        margin: 20px auto;
+        position: relative;
+    }
+}

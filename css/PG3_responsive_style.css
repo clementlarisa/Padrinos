@@ -1,0 +1,36 @@
+@media screen and (max-width: 480px) {
+    .gallery_column {
+        flex: 100%;
+        max-width: 100%;
+    }
+}
+
+@media (max-width: 1000px) {
+    .grid-container {
+        grid-template-areas:
+                'gallery gallery gallery'
+                'left left left'
+                'middle middle middle'
+                'right right right';
+    }
+
+    .left {
+        grid-area: left;
+        background: #f4f4f4;
+        border: 0.1em solid #160E25;
+    }
+
+    .middle {
+        grid-area: middle;
+        background: #f4f4f4;
+        border: 0.1em solid #B28780;
+        margin-top: 0.5em;
+    }
+
+    .right {
+        grid-area: right;
+        background: #f4f4f4;
+        border: 0.1em solid #652C33;
+        margin-top: 0.5em;
+    }
+}
