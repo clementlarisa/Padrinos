@@ -1,4 +1,4 @@
-# MusicStore
+# Parino's
 Online music store concept &amp; a virtual piano — JavaScript, HTML5, CSS3, Web Audio API.
 
 ## Illustrative Screenshots
